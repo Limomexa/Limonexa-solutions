@@ -1,7 +1,13 @@
 import Navbar from "./Navbar";
 import Footer from "../components/Footer";
+import { ReactNode } from "react"; //
 
-function Layout({ children }) {
+//
+interface LayoutProps {
+  children: ReactNode;
+}
+
+function Layout({ children }: LayoutProps) {
   return (
     <div className="relative w-full min-h-screen overflow-x-hidden">
       <div className="fixed inset-0 z-0 pointer-events-none" />

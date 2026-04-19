@@ -1,4 +1,5 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 
 const technologies = [
   {
@@ -113,15 +114,15 @@ const technologies = [
   },
 ];
 
-const floatingVariants = {
-  animate: (i: number) => ({
+const floatingVariants: Variants = {
+  animate: (i: number = 0) => ({
     y: [0, -20, 0],
     x: [0, Math.sin(i) * 10, 0],
     rotate: [0, 5, 0, -5, 0],
     transition: {
       duration: 3 + i * 0.5,
       repeat: Infinity,
-      ease: "easeInOut",
+      ease: "easeInOut", // no 'as any'
       delay: i * 0.2,
     },
   }),
