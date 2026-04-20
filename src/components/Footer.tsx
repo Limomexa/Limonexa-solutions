@@ -136,7 +136,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-[10px] text-gray-500 font-bold uppercase">
-                    HQ Location
+                    Location
                   </p>
                   <p className="text-sm text-gray-300 font-medium">
                     Chennai, India
@@ -160,13 +160,13 @@ export default function Footer() {
           <div className="flex items-center gap-8">
             <button
               onClick={() => setModalType("privacy")}
-              className="text-gray-500 hover:text-white text-xs font-bold transition-colors tracking-widest"
+              className="cursor-pointer text-gray-500 hover:text-white text-xs font-bold transition-colors tracking-widest"
             >
               PRIVACY POLICY
             </button>
             <button
               onClick={() => setModalType("terms")}
-              className="text-gray-500 hover:text-white text-xs font-bold transition-colors tracking-widest"
+              className="cursor-pointer text-gray-500 hover:text-white text-xs font-bold transition-colors tracking-widest"
             >
               TERMS OF SERVICE
             </button>
